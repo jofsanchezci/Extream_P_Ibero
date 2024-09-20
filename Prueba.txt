@@ -1,0 +1,9 @@
+export CLASSPATH=".:/Users/joaquinfsanchez/Downloads/antlr/antlr-4.13.1-complete.jar:$CLASSPATH"
+
+java org.antlr.v4.Tool
+java org.antlr.gui.TestRig
+
+
+java org.antlr.v4.Tool -o ../ -no-listener -visitor -Dlanguage=Python3 gramaticaa.g4
+
+awk -f token.awk token.txt
